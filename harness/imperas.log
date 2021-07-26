@@ -1,0 +1,80 @@
+Info Session started: Mon Jul 26 16:40:08 2021
+
+Info ------------- ENVIRONMENT -------------
+Info IMPERAS_ARCH                             = Linux64
+Info IMPERASD_LICENSE_FILE                    = 2700@localhost
+Info IMPERAS_BACKTRACE                        = 1
+Info IMPERAS_HOME                             = /soft64/Imperas.20210408/Imperas.20210408
+Info IMPERAS_ISS                              = /soft64/Imperas.20210408/Imperas.20210408/bin/Linux64/iss.exe
+Info IMPERAS_M32                              = 0
+Info IMPERAS_PERSONALITY                      = CPUMAN_STANDARD
+Info IMPERAS_RUNTIME                          = CpuManager
+Info IMPERAS_SHRSUF                           = so
+Info IMPERAS_UNAME                            = Linux
+Info IMPERAS_VLNV                             = /soft64/Imperas.20210408/Imperas.20210408/lib/Linux64/ImperasLib
+Info LD_LIBRARY_PATH                          = /soft64/Imperas.20210408/Imperas.20210408/bin/Linux64:/soft64/Imperas.20210408/Imperas.20210408/lib/Linux64/External/lib:/soft64/Imperas.20210408/Imperas.20210408/bin/Linux64:/soft64/Imperas.20210408/Imperas.20210408/lib//soft64/Imperas.20210408/Imperas.20210408/lib/Linux64/External/lib:/soft64/Imperas.20210408/Imperas.20210408/bin/Linux64
+Info --------------------------------------
+Info -------- FLAGS (from harness.exe)
+Info --modulefile  ../module/model.Linux64.so
+Info --program  RiscvRV32FreeRTOS/cpu0=../FreeRTOS/Debug/miv-rv32im-freertos-port-test.elf
+Info --override  RiscvRV32FreeRTOS/uart0/console=T
+Info --override  RiscvRV32FreeRTOS/uart0/finishOnDisconnect=T
+Info --override  RiscvRV32FreeRTOS/uart0/outfile=uart0.log
+Info --verbose
+Info --output  imperas.log
+Info --------------------------------------
+
+
+CpuManagerStandard (64-Bit) v20210408.0 Open Virtual Platform simulator from www.IMPERAS.com.
+Copyright (c) 2005-2021 Imperas Software Ltd.  Contains Imperas Proprietary Information.
+Licensed Software, All Rights Reserved.
+Visit www.IMPERAS.com for multicore debug, verification and analysis solutions.
+
+CpuManagerStandard started: Mon Jul 26 16:40:08 2021
+
+
+Info (PSE_SER) 'RiscvRV32FreeRTOS/uart0' Server connected to 35891
+Info (OR_OF) Target 'RiscvRV32FreeRTOS/cpu0' has object file read from '../FreeRTOS/Debug/miv-rv32im-freertos-port-test.elf'
+Info (OR_PH) Program Headers:
+Info (OR_PH) Type           Offset     VirtAddr   PhysAddr   FileSiz    MemSiz     Flags Align
+Info (OR_PD) LOAD           0x00001000 0x80000000 0x80000000 0x00002cd0 0x0003be10 RWE   1000
+Info (writeTBR) RiscvRV32FreeRTOS/tbr: Foi escrito no registrador, 10
+Info (readTBR) RiscvRV32FreeRTOS/tbr: Foi lido do registrador, 10
+Info (PSE_SER) 'RiscvRV32FreeRTOS/uart0' Socket disconnected - terminating simulation
+Info (PSE_SER) 'RiscvRV32FreeRTOS/uart0' Disconnected from port 35891
+Info 
+Info ---------------------------------------------------
+Info PSE SIMULATION TIME STATISTICS
+Info    0.00 seconds: PSE THREAD 'RiscvRV32FreeRTOS/uart0'
+Info    0.01 seconds: PSE 'RiscvRV32FreeRTOS/tbr' (and 4 terminated callbacks)
+Info    0.00 seconds: PSE 'RiscvRV32FreeRTOS/prci0' (and 11 terminated threads, 63 terminated callbacks)
+Info    0.01 seconds: PSE 'RiscvRV32FreeRTOS/plic0' (and 313 terminated callbacks)
+Info    2.41 seconds: PSE 'RiscvRV32FreeRTOS/uart0' (and 1 terminated thread, 343 terminated callbacks)
+Info ---------------------------------------------------
+Info 
+Info ---------------------------------------------------
+Info CPU 'RiscvRV32FreeRTOS/cpu0' STATISTICS
+Info   Type                  : riscv (RVB32I+MSU)
+Info   Nominal MIPS          : 50
+Info   Final program counter : 0x8000154c
+Info   Simulated instructions: 4,826,707,000,000
+Info   Simulated MIPS        : 245509.0
+Info ---------------------------------------------------
+Info 
+Info ---------------------------------------------------
+Info SIMULATION TIME STATISTICS
+Info   Simulated time        : 96534.14 seconds
+Info   User time             : 17.93 seconds
+Info   System time           : 1.73 seconds
+Info   Elapsed time          : 19.66 seconds
+Info   Real time ratio       : 4909.55x faster
+Info ---------------------------------------------------
+
+CpuManagerStandard finished: Mon Jul 26 16:40:28 2021
+
+
+CpuManagerStandard (64-Bit) v20210408.0 Open Virtual Platform simulator from www.IMPERAS.com.
+Visit www.IMPERAS.com for multicore debug, verification and analysis solutions.
+
+Info Session ended: Mon Jul 26 16:40:28 2021
+
